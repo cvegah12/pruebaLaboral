@@ -13,7 +13,7 @@ import java.util.regex.Matcher;
  * @author Camilo Vega
  */
 public class SumNumbers {
-    
+    //usando las librerías de expresiones regulares 
     public int sumNumbers(String s){
         int sum = 0;
         Pattern p = Pattern.compile("\\d+");
@@ -23,13 +23,8 @@ public class SumNumbers {
         }
         
         return sum;
-        /*int ind1,ind2;
-        ind1=s.indexOf("(\\d+)");
-        ind2=s.lastIndexOf("(\\d+)");
-        System.out.println(ind1+ " " +ind2);
-        System.out.print(s.substring(ind1, ind2));*/
     }
-    
+    // recorriendo manualmente el string
     public int sumNumbersAlt(String s) {
         int sum = 0;
         boolean chain = false;

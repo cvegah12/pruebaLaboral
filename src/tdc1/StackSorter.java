@@ -21,12 +21,13 @@ public class StackSorter {
             
             
             
-            // se dejan numeros hasta
+            // se dejan numeros en B hasta que haya uno mayor al actual en B
+            //Ese procede a dejarse en la variable auxiliar T.
             
             do{
                 printResults((Stack<Integer>)stackA.clone(),(Stack<Integer>)stackB.clone(),t);
                 stackB.push(stackA.pop());
-            }while(stackA.empty() ? false : /*(Integer)*/stackA.peek()</*(Integer)*/stackB.peek());
+            }while(stackA.empty() ? false : stackA.peek()<stackB.peek());
             if(!stackA.empty()){
                 printResults((Stack<Integer>)stackA.clone(),(Stack<Integer>)stackB.clone(),t);
                 t = stackA.pop();
@@ -35,7 +36,7 @@ public class StackSorter {
             // Se devuelve al stack A hasta tener un número mayor que el almacenado en t
             
             while (stackB.empty() || stackA.empty() ? false : stackB.peek()<t){
-                //System.out.print("\nB = "+stackB.peek());
+
                 printResults((Stack<Integer>)stackA.clone(),(Stack<Integer>)stackB.clone(),t);
                 stackA.push(stackB.pop());
             }

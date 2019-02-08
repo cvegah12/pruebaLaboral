@@ -19,7 +19,18 @@ public class TDC1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        /*Stack<Integer> stackA = new Stack<Integer>();
+        
+        // Descomentar ejercicio que se quiera ver.
+        
+        // ej1() 
+        // ej2()
+        // ej3()
+        
+
+    }
+    
+    static void ej1(){
+        Stack<Integer> stackA = new Stack<Integer>();
         stackA.push(2);
         stackA.push(0);
         stackA.push(3);
@@ -35,17 +46,15 @@ public class TDC1 {
         while(!stackA.empty()){
             System.out.print(stackA.pop()+"\n");
         }
-        */
-        /*
+    }
+    static void ej2(){
         SumNumbers sn = new SumNumbers();
+        System.out.println(sn.sumNumbers("aa11b33"));
         System.out.println(sn.sumNumbersAlt("aa11b33"));
-        //int i = 97;
-        
-        for (char c= 97; c<123;c++)
-         System.out.println(String.valueOf(c));*/
-        
+    }
+    
+    static void ej3(){
         Kdom kd = new Kdom();
         System.out.println(kd.kDomSearch("sdfshkssrfatweqsrqsswra"));
     }
-    
 }
