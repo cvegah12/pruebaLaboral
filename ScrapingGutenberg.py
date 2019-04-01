@@ -238,10 +238,10 @@ for i in range(1,51):
                         qr_info = qr,
                         test = True,
                         )
-        q = s.post(urlForm,data=bookData)
+        q = s.post(urlForm, data=bookData)
         
-        #soupQ = BeautifulSoup(q.content,'html.parser')
-        #print(soupQ.prettify)
+        soupQ = BeautifulSoup(q.content,'html.parser')
+        print(soupQ.prettify)
         print(q.content)
         if i%5 == 0:
             time.sleep(5)
